@@ -52,7 +52,7 @@ export const Card = ({
         className="w-[163px] h-[163px] flex flex-col border"
         style={
           isSelected
-            ? { boxShadow: "0px 0px 25px 3px #E8BB4A", borderColor: color }
+            ? { boxShadow: `0px 0px 25px 3px ${color}`, borderColor: color }
             : { borderColor: "#333" }
         }
       >
@@ -62,7 +62,7 @@ export const Card = ({
             // width={"72px"}
             // style={{ boxShadow: `0px 1px 21.2px 0px ${color}` }}
             alt="iconic"
-            className="object-contain max-w-[90%] max-h-[90%] w-[72px]"
+            className="object-contain max-w-[90%] max-h-[90%] "
           ></img>
         </div>
         <div

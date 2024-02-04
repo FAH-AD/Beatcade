@@ -22,15 +22,33 @@ export const Menu = () => {
         style={{ visibility: snap.enableMenu ? "visible" : "hidden" }}
       >
         <div className="w-full h-[30px] flex flex-row items-center gap-[29px] text-white font-[Inter] text-[23px] font-bold tracking-[-0.46px]">
-          <p>All</p>
-          <p>VOYAGER</p>
-          {/* <p className='font-[Whangarei] font-normal tracking-[-0.56px] text-[28px] text-[#B0FFFF] drop-shadow-lg'>TANIWHA</p> */}
-          <p
-            className="font-[Whangarei] font-normal h-fit tracking-[-0.56px] text-[35px] text-[#B0FFFF]"
-            style={{ textShadow: "0px 0px 10px #B0FFFF" }}
-          >
-            TANIWHA
-          </p>
+          {snap.model === "Packs" && (
+            <>
+              <p>All</p>
+              <p>VOYAGER</p>
+              {/* <p className='font-[Whangarei] font-normal tracking-[-0.56px] text-[28px] text-[#B0FFFF] drop-shadow-lg'>TANIWHA</p> */}
+              <p
+                className="font-[Whangarei] font-normal h-fit tracking-[-0.56px] text-[35px] text-[#B0FFFF]"
+                style={{ textShadow: "0px 0px 10px #B0FFFF" }}
+              >
+                TANIWHA
+              </p>
+            </>
+          )}
+          {snap.model === "Machines" && (
+            <>
+              <p>All</p>
+              <p>Synths</p>
+              {/* <p className='font-[Whangarei] font-normal tracking-[-0.56px] text-[28px] text-[#B0FFFF] drop-shadow-lg'>TANIWHA</p> */}
+              <p
+                className="font-[Whangarei] font-normal h-fit tracking-[-0.56px] text-[35px] text-[#B0FFFF]"
+                style={{ textShadow: "0px 0px 10px #B0FFFF" }}
+              >
+                MPCs
+              </p>
+              <p>Sonics</p>
+            </>
+          )}
         </div>
         <div className=" w-auto grid grid-cols-3 gap-x-6 gap-y-10">
           {snap.model &&
