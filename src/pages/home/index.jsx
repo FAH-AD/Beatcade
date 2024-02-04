@@ -402,7 +402,7 @@ const Home = () => {
       )}
 
       {snap.model === "Packs" && snap.enableMenu === false && modelState && (
-        <div className="absolute flex flex-col left-[55vw] top-[40vh] w-[27vw] gap-[10px]">
+        <div className="absolute flex flex-col left-[55vw] top-[25vh] xl:top-[30vh] w-[34vw] xl:w-[27vw] gap-[10px]">
           <p
             className={`font-[Whangarei] text-[36px] font-normal tracking-[-0.72px] leading-[22px]`}
             style={{ color: modelState.color }}
@@ -410,15 +410,15 @@ const Home = () => {
             {modelState.title}
           </p>
           <p
-            className={`font-[Whangarei] text-[96px] font-normal tracking-[-1.92px] leading-[70px] uppercase`}
+            className={`font-[Whangarei] text-[77px] lg:text-[80px] xl:text-[96px] font-normal tracking-[-1.92px] leading-[70px] uppercase`}
             style={{ color: modelState.color }}
           >
             {modelState.name}{" "}
           </p>
-          <p className="text-white font-[Inter] text-[23px] font-bold tracking-[-0.46px] leading-[28px]">
+          <p className="text-white font-[Inter] text-[12px] lg:text-[14px] xl:text-[23px] font-bold tracking-[-0.46px] leading-[28px]">
             {modelState.description}
           </p>
-          <p className="text-white font-[Inter] text-[17px] font-bold tracking-[-0.34px] leading-[28px]">
+          <p className="text-white font-[Inter] text-[12px] xl:text-[17px] font-bold tracking-[-0.34px] leading-[28px]">
             {modelState.subDescription}
           </p>
         </div>
