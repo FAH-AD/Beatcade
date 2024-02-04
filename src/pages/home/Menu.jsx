@@ -11,14 +11,14 @@ export const Menu = () => {
       // className='absolute right-0 h-full border-[#ffffff13] border z-10 transition-all duration-1000'
       className="absolute right-0 h-full border-[#ffffff13] border z-20 overflow-y-scroll"
       style={{
-        width: snap.enableMenu ? "40vw" : "0px",
+        width: snap.enableMenu ? "auto" : "0px",
         background:
           "linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.9) 80%, rgba(0,0,0,1) 100%)",
         display: snap.fullscreen ? "none" : "flex",
       }}
     >
       <div
-        className="relative w-full pt-[130px] pr-[107px] pb-[205px] pl-[40px] flex flex-col gap-[34px]"
+        className="relative w-full pt-[130px] pr-[80px] pb-[205px] pl-[40px] flex flex-col gap-[34px]"
         style={{ visibility: snap.enableMenu ? "visible" : "hidden" }}
       >
         <div className="w-full h-[30px] flex flex-row items-center gap-[29px] text-white font-[Inter] text-[23px] font-bold tracking-[-0.46px]">
@@ -32,7 +32,7 @@ export const Menu = () => {
             TANIWHA
           </p>
         </div>
-        <div className="w-full grid grid-cols-3 gap-x-[70px] gap-y-10">
+        <div className=" w-auto grid grid-cols-3 gap-x-6 gap-y-10">
           {snap.model &&
             MyData.products[snap.model].map((product, index) => {
               return (

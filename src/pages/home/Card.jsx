@@ -62,7 +62,7 @@ export const Card = ({
             // width={"72px"}
             // style={{ boxShadow: `0px 1px 21.2px 0px ${color}` }}
             alt="iconic"
-            className="object-contain max-w-[90%] max-h-[90%]"
+            className="object-contain max-w-[90%] max-h-[90%] w-[72px]"
           ></img>
         </div>
         <div
