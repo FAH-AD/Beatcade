@@ -386,7 +386,7 @@ const Home = () => {
       </div>
 
       {(snap.model === "Packs" || snap.model === "Machines") && (
-        <div className="absolute flex flex-col gap-[0] left-[0%] top-[48%] translate-y-[-50%] items-center z-40">
+        <div className="absolute flex flex-col left-[0%] top-[43%] translate-y-[-50%] items-center z-40">
           <img
             className="w-[6vh] cursor-pointer"
             src={`${
@@ -467,15 +467,6 @@ const Home = () => {
               }));
             }}
           />
-
-{modelState && (
-            <Card
-              name={modelState.name}
-              colorName={modelState.colorName}
-              imgUrl={modelState.imgUrl}
-              customClass={"scale-[0.5]"}
-            />
-          )}
         </div>
       )}
 
