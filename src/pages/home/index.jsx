@@ -123,7 +123,35 @@ const Home = () => {
   };
 
   const handleClick = (imageName) => {
-    playAudio(imageName);
+    if (isPlaying[imageName]) {
+      setIsPlaying((prevState) => ({
+        ...prevState,
+        [imageName]: false,
+      }));
+      if (currentPlayer) {
+        currentPlayer.stop();
+        setCurrentPlayer(null);
+      }
+    } else {
+      // If any other image is playing, stop it
+      Object.keys(isPlaying).forEach((key) => {
+        if (isPlaying[key]) {
+          setIsPlaying((prevState) => ({
+            ...prevState,
+            [key]: false,
+          }));
+        }
+      });
+
+      // Start playing the clicked image
+      playAudio(imageName);
+
+      // Set the state for the clicked image
+      setIsPlaying((prevState) => ({
+        ...prevState,
+        [imageName]: true,
+      }));
+    }
   };
 
   return (
@@ -358,46 +386,87 @@ const Home = () => {
       </div>
 
       {(snap.model === "Packs" || snap.model === "Machines") && (
-        <div className="absolute flex flex-col left-[12px] top-[43%] translate-y-[-50%] items-center z-40">
+        <div className="absolute flex flex-col left-[3%] top-[43%] translate-y-[-50%] items-center z-40">
           <img
             className="w-[6vh] cursor-pointer"
-            src="/images/icon/Gold Play.png"
+            src={`${
+              isPlaying.gold
+                ? "/images/icon/Gold Stop.png"
+                : "/images/icon/Gold Play.png"
+            }`}
             alt="Gold Play"
-            onClick={() => handleClick("Gold Play")}
+            onClick={() => {
+              handleClick("Gold Play");
+              setIsPlaying((prevState) => ({
+                ...prevState,
+                gold: !prevState.gold,
+              }));
+            }}
           />
           <img
             className="w-[6vh] cursor-pointer"
-            src="/images/icon/Purple Play.png"
+            src={`${
+              isPlaying.purple
+                ? "/images/icon/Purple Stop.png"
+                : "/images/icon/Purple Play.png"
+            }`}
             alt="Purple Play"
-            onClick={() => handleClick("Purple Play")}
+            onClick={() => {
+              handleClick("Purple Play");
+              setIsPlaying((prevState) => ({
+                ...prevState,
+                purple: !prevState.purple,
+              }));
+            }}
           />
           <img
             className="w-[6vh] cursor-pointer"
-            src="/images/icon/Blue Play.png"
+            src={`${
+              isPlaying.blue
+                ? "/images/icon/Blue Stop.png"
+                : "/images/icon/Blue Play.png"
+            }`}
             alt="Blue Play"
-            onClick={() => handleClick("Blue Play")}
+            onClick={() => {
+              handleClick("Blue Play");
+              setIsPlaying((prevState) => ({
+                ...prevState,
+                blue: !prevState.blue,
+              }));
+            }}
           />
           <img
             className="w-[6vh] cursor-pointer"
-            src="/images/icon/Green Play.png"
+            src={`${
+              isPlaying.green
+                ? "/images/icon/Green Stop.png"
+                : "/images/icon/Green Play.png"
+            }`}
             alt="Green Play"
-            onClick={() => handleClick("Green Play")}
+            onClick={() => {
+              handleClick("Green Play");
+              setIsPlaying((prevState) => ({
+                ...prevState,
+                green: !prevState.green,
+              }));
+            }}
           />
           <img
             className="w-[6vh] cursor-pointer"
-            src="/images/icon/White Play.png"
+            src={`${
+              isPlaying.white
+                ? "/images/icon/White Stop.png"
+                : "/images/icon/White Play.png"
+            }`}
             alt="White Play"
-            onClick={() => handleClick("White Play")}
+            onClick={() => {
+              handleClick("White Play");
+              setIsPlaying((prevState) => ({
+                ...prevState,
+                white: !prevState.white,
+              }));
+            }}
           />
-
-          {modelState && (
-            <Card
-              name={modelState.name}
-              colorName={modelState.colorName}
-              imgUrl={modelState.imgUrl}
-              customClass={"scale-[0.5]"}
-            />
-          )}
         </div>
       )}
 
