@@ -18,10 +18,10 @@ export const Menu = () => {
       }}
     >
       <div
-        className="relative w-full pt-[130px] pr-[80px] pb-[205px] pl-[40px] flex flex-col gap-[34px]"
+        className="relative w-full pt-[80px] pr-[60px] pb-[205px] pl-[20px] flex flex-col gap-[34px]"
         style={{ visibility: snap.enableMenu ? "visible" : "hidden" }}
       >
-        <div className="w-full h-[30px] flex flex-row items-center gap-[29px] text-white font-[Inter] text-[23px] font-bold tracking-[-0.46px]">
+        <div className="w-full h-[20px] flex flex-row items-center gap-[29px] text-white font-[Inter] text-[20px] font-[500] tracking-[-0.46px]">
           {snap.model === "Packs" && (
             <>
               <p>All</p>
@@ -50,12 +50,12 @@ export const Menu = () => {
             </>
           )}
         </div>
-        <div className=" w-auto grid grid-cols-3 gap-x-6 gap-y-10">
+        <div className=" w-auto grid grid-cols-3 gap-x-4 gap-y-6">
           {snap.model &&
             MyData.products[snap.model].map((product, index) => {
               return (
                 <Card
-                  name={product.name}
+                  name={product.menu_name}
                   colorName={product.colorName}
                   imgUrl={product.imgUrl}
                   key={index}

@@ -164,7 +164,7 @@ const Home = () => {
                 onClick={goHomePage}
               >BEATCADE™</p> */}
               <img
-                className="w-[30vw] object-contain cursor-pointer pointer-events-auto"
+                className="w-[25vw] object-contain cursor-pointer pointer-events-auto"
                 style={snap.fullscreen ? { opacity: 0.3 } : { opacity: 1 }}
                 src="/images/logo.svg"
                 alt="logo"
@@ -175,14 +175,14 @@ const Home = () => {
 
           <motion.div
             {...slideAnimation("up")}
-            className="absolute bottom-0 flex flex-col gap-[0.5vw]"
+            className="absolute bottom-0 flex flex-col gap-[0]"
             style={{ display: snap.fullscreen ? "none" : "flex" }}
           >
             <motion.div {...headTextAnimation}>
-              <p className="text-white font-[G7 Silkworm TTF] text-[1.2vw] font-normal  tracking-[-0.36px]">
+              <p className="text-white font-[G7 Silkworm TTF] leading-3 text-[1vw] font-normal  tracking-[-0.36px]">
                 BHaruMusic Presents
               </p>
-              <p className="text-[#ADDFFF] font-[Whangarei] text-[5vw] font-normal  tracking-[-1.52px]">
+              <p className="text-[#ADDFFF] font-[Whangarei] leading-[4vw] text-[4vw] font-normal  tracking-[-1.52px]">
                 VOYAGER
               </p>
             </motion.div>
@@ -375,7 +375,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="absolute flex flex-col left-[50%] translate-x-[-50%] bottom-[64px] items-center">
+      <div className="absolute flex flex-col left-[50%] translate-x-[-50%] bottom-[30px] items-center">
         <p className="text-[#ADDFFF] text-[36px] font-[Whangarei] font-normal tracking-[-0.72px] leading-[22px] uppercase">
           Next Drop
         </p>
@@ -386,7 +386,7 @@ const Home = () => {
       </div>
 
       {(snap.model === "Packs" || snap.model === "Machines") && (
-        <div className="absolute flex flex-col left-[3%] top-[43%] translate-y-[-50%] items-center z-40">
+        <div className="absolute flex flex-col gap-[0] left-[0%] top-[48%] translate-y-[-50%] items-center z-40">
           <img
             className="w-[6vh] cursor-pointer"
             src={`${
@@ -467,27 +467,36 @@ const Home = () => {
               }));
             }}
           />
+
+{modelState && (
+            <Card
+              name={modelState.name}
+              colorName={modelState.colorName}
+              imgUrl={modelState.imgUrl}
+              customClass={"scale-[0.5]"}
+            />
+          )}
         </div>
       )}
 
       {snap.model === "Packs" && snap.enableMenu === false && modelState && (
-        <div className="absolute flex flex-col left-[55vw] top-[25vh] xl:top-[30vh] w-[34vw] xl:w-[27vw] gap-[10px]">
+        <div className="absolute flex flex-col left-[52vw] top-[25vh] xl:top-[30vh] w-[34vw] xl:w-[27vw] gap-[0px]">
           <p
-            className={`font-[Whangarei] text-[36px] font-normal tracking-[-0.72px] leading-[22px]`}
+            className={`font-[Whangarei] text-[26px] font-normal tracking-[-0.72px] leading-[22px]`}
             style={{ color: modelState.color }}
           >
             {modelState.title}
           </p>
           <p
-            className={`font-[Whangarei] text-[77px] lg:text-[80px] xl:text-[96px] font-normal tracking-[-1.92px] leading-[70px] uppercase`}
+            className={`font-[Whangarei]  lg:text-[70px] xl:text-[70px] font-normal tracking-[-1.92px] leading-[72px] uppercase`}
             style={{ color: modelState.color }}
           >
             {modelState.name}{" "}
           </p>
-          <p className="text-white font-[Inter] text-[12px] lg:text-[14px] xl:text-[23px] font-bold tracking-[-0.46px] leading-[28px]">
+          <p className="text-white font-[Inter] text-[12px] lg:text-[10px] xl:text-[15px] font-bold tracking-[-0.46px] leading-[18px]">
             {modelState.description}
           </p>
-          <p className="text-white font-[Inter] text-[12px] xl:text-[17px] font-bold tracking-[-0.34px] leading-[28px]">
+          <p className="text-white font-[Inter] text-[12px] mt-[10px] xl:text-[17px] font-bold tracking-[-0.34px] leading-[36px]">
             {modelState.subDescription}
           </p>
         </div>

@@ -1,20 +1,11 @@
 {
   "products": {
     "Packs": [
-      {
-        "id": "1-1",
-        "name": "taniwha",
-        "subName": "Vol 1",
-        "colorName": "rare",
-        "title": "MAORI MONSTERS",
-        "description": "An exclusive collection of authentic Maori sonics captured from one-of-a-kind Maori instruments in the beating heart of New Zealand",
-        "subDescription": "Available only in Season One: VOYAGER",
-        "imgUrl": "/images/products/packs/taniwha.png",
-        "modelUrl": "/models/products/packs/taniwha.glb"
-      },
+ 
       {
         "id": "1-2",
         "name": "python",
+        "menu_name":"python",
         "subName": "1/9",
         "colorName": "iconic",
         "title": "MAORI MONSTERS",
@@ -23,20 +14,11 @@
         "imgUrl": "/images/products/packs/python.png",
         "modelUrl": "/models/products/packs/python.glb"
       },
+   
       {
         "id": "2-3",
-        "name": "Caustic: VOL 1",
-        "subName": "1/9",
-        "colorName": "rare",
-        "title": "MAORI MONSTERS",
-        "description": "An exclusive collection of authentic Maori sonics captured from one-of-a-kind Maori instruments in the beating heart of New Zealand",
-        "subDescription": "Available only in Season One: VOYAGER",
-        "imgUrl": "/images/products/packs/gaustic.png",
-        "modelUrl": "/models/products/packs/python.glb"
-      },
-      {
-        "id": "3-4",
-        "name": "Shock: VOL 1",
+        "name": "Shock",
+        "menu_name": "Shock: VOL 1",
         "subName": "1/9",
         "colorName": "legendary",
         "title": "MAORI MONSTERS",
@@ -46,8 +28,22 @@
         "modelUrl": "/models/products/packs/python.glb"
       },
       {
+        "id": "3-4",
+        "name": "Shock",
+        "menu_name": "Shock: VOL 2",
+        "subName": "1/9",
+        "colorName": "legendary",
+        "title": "MAORI MONSTERS",
+        "description": "An exclusive collection of authentic Maori sonics captured from one-of-a-kind Maori instruments in the beating heart of New Zealand",
+        "subDescription": "Available only in Season One: VOYAGER",
+        "imgUrl": "/images/products/packs/shock.png",
+        "modelUrl": "/models/products/packs/python.glb"
+      },
+    
+      {
         "id": "4-5",
-        "name": "Demon: VOL 1",
+        "name": "Demon",
+        "menu_name": "Demon: VOL 1",
         "subName": "1/9",
         "colorName": "epic",
         "title": "MAORI MONSTERS",
@@ -58,7 +54,44 @@
       },
       {
         "id": "5-6",
-        "name": "Summon: VOL 1",
+        "name": "Demon",
+        "menu_name": "Demon: VOL 2",
+        "subName": "1/9",
+        "colorName": "epic",
+        "title": "MAORI MONSTERS",
+        "description": "An exclusive collection of authentic Maori sonics captured from one-of-a-kind Maori instruments in the beating heart of New Zealand",
+        "subDescription": "Available only in Season One: VOYAGER",
+        "imgUrl": "/images/products/packs/demon.png",
+        "modelUrl": "/models/products/packs/python.glb"
+      },
+      {
+        "id": "6-7",
+        "name": "Caustic",
+        "menu_name":"Caustic:VOL 1",
+        "subName": "1/9",
+        "colorName": "rare",
+        "title": "MAORI MONSTERS",
+        "description": "An exclusive collection of authentic Maori sonics captured from one-of-a-kind Maori instruments in the beating heart of New Zealand",
+        "subDescription": "Available only in Season One: VOYAGER",
+        "imgUrl": "/images/products/packs/gaustic.png",
+        "modelUrl": "/models/products/packs/python.glb"
+      },
+      {
+        "id": "7-8",
+        "name": "Caustic",
+        "menu_name":"Caustic:VOL 2",
+        "subName": "1/9",
+        "colorName": "rare",
+        "title": "MAORI MONSTERS",
+        "description": "An exclusive collection of authentic Maori sonics captured from one-of-a-kind Maori instruments in the beating heart of New Zealand",
+        "subDescription": "Available only in Season One: VOYAGER",
+        "imgUrl": "/images/products/packs/gaustic.png",
+        "modelUrl": "/models/products/packs/python.glb"
+      },
+      {
+        "id": "8-9",
+        "name": "Summon",
+        "menu_name": "Summon: VOL 1",
         "subName": "1/9",
         "colorName": "common",
         "title": "MAORI MONSTERS",
@@ -68,30 +101,9 @@
         "modelUrl": "/models/products/packs/python.glb"
       },
       {
-        "id": "6-7",
-        "name": "Shock: VOL 2",
-        "subName": "1/9",
-        "colorName": "legendary",
-        "title": "MAORI MONSTERS",
-        "description": "An exclusive collection of authentic Maori sonics captured from one-of-a-kind Maori instruments in the beating heart of New Zealand",
-        "subDescription": "Available only in Season One: VOYAGER",
-        "imgUrl": "/images/products/packs/shock.png",
-        "modelUrl": "/models/products/packs/python.glb"
-      },
-      {
-        "id": "7-8",
-        "name": "python",
-        "subName": "1/9",
-        "colorName": "iconic",
-        "title": "MAORI MONSTERS",
-        "description": "An exclusive collection of authentic Maori sonics captured from one-of-a-kind Maori instruments in the beating heart of New Zealand",
-        "subDescription": "Available only in Season One: VOYAGER",
-        "imgUrl": "/images/products/packs/python.png",
-        "modelUrl": "/models/products/packs/python.glb"
-      },
-      {
-        "id": "8-9",
-        "name": "Summon: VOL 2",
+        "id": "9-10",
+        "name": "Summon",
+        "menu_name": "Summon:VOL 2",
         "subName": "1/9",
         "colorName": "common",
         "title": "MAORI MONSTERS",

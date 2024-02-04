@@ -43,16 +43,16 @@ export const BattleDescription = () => {
         <div className="flex gap-x-2 items-center">
           <img
             src="/images/icon/trophy.png"
-            className="w-[50px] h-[50px] xl:w-[73px] xl:h-[73px] object-contain"
+            className="w-[30px] h-[30px] xl:w-[53px] xl:h-[53px] object-contain"
           />
-          <p className="drop-shadow-[0_0_8.2px_#F9FFAF] text-[#F9FFAF] font-['Atyp Display'] font-bold text-[22px]">
+          <p className="drop-shadow-[0_0_8.2px_#F9FFAF] text-[#F9FFAF] font-['Atyp Display'] font-bold text-[20px]">
             MOGUL
           </p>
         </div>
         <div className="flex gap-x-2 items-center">
           <img
             src="/images/icon/hot.png"
-            className="w-[50px] h-[50px] xl:w-[73px] xl:h-[73px] object-contain"
+            className="w-[50px] h-[50px] xl:w-[53px] xl:h-[53px] object-contain"
           />
           <p className="drop-shadow-[0_0_8.2px_#FFCCAF] font-['Atyp Display'] font-bold text-[22px] text-[#FFCCAF]">
             HOT
@@ -61,7 +61,7 @@ export const BattleDescription = () => {
         <div className="flex gap-x-2 items-center">
           <img
             src="/images/icon/master.png"
-            className="w-[50px] h-[50px] xl:w-[73px] xl:h-[73px] object-contain"
+            className="w-[50px] h-[50px] xl:w-[53px] xl:h-[53px] object-contain"
           />
           <p className="drop-shadow-[0_0_8.2px_#F9AFFF] font-['Atyp Display'] font-bold text-[22px] text-[#F9AFFF]">
             MASTER
@@ -70,7 +70,7 @@ export const BattleDescription = () => {
         <div className="flex gap-x-2 items-center">
           <img
             src="/images/icon/pro.png"
-            className="w-[50px] h-[50px] xl:w-[73px] xl:h-[73px] object-contain"
+            className="w-[50px] h-[50px] xl:w-[53px] xl:h-[53px] object-contain"
           />
           <p className="drop-shadow-[0_0_8.2px_#AFB7FF] font-['Atyp Display'] font-bold text-[22px] text-[#AFB7FF]">
             PRO
@@ -79,7 +79,7 @@ export const BattleDescription = () => {
         <div className="flex gap-x-2 items-center">
           <img
             src="/images/icon/talent.png"
-            className="w-[50px] h-[50px] xl:w-[73px] xl:h-[73px] object-contain"
+            className="w-[50px] h-[50px] xl:w-[53px] xl:h-[53px] object-contain"
           />
           <p className="drop-shadow-[0_0_8.2px_#AFFFCA] font-['Atyp Display'] font-bold text-[22px] text-[#AFFFCA]">
             TALENT
@@ -88,7 +88,7 @@ export const BattleDescription = () => {
         <div className="flex gap-x-2 items-center">
           <img
             src="/images/icon/creator.png"
-            className="w-[50px] h-[50px] xl:w-[73px] xl:h-[73px] object-contain"
+            className="w-[50px] h-[50px] xl:w-[53px] xl:h-[53px] object-contain"
           />
           <p className="drop-shadow-[0_0_8.2px_#AFF1FF] font-['Atyp Display'] font-bold text-[22px] text-[#AFF1FF]">
             CREATOR
@@ -97,7 +97,7 @@ export const BattleDescription = () => {
         <div className="flex gap-x-2 items-center">
           <img
             src="/images/icon/starter.png"
-            className="w-[50px] h-[50px] xl:w-[73px] xl:h-[73px] object-contain"
+            className="w-[50px] h-[50px] xl:w-[53px] xl:h-[53px] object-contain"
           />
           <p className="drop-shadow-[0_0_8.2px_#FFFFFF] font-['Atyp Display'] font-bold text-[22px] text-[#FFFFFF]">
             STARTER

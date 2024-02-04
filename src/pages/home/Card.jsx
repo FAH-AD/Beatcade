@@ -8,7 +8,7 @@ const VectorIcon = ({ color }) => {
       viewBox="0 0 21 27"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute top-2 left-2"
+      className="absolute top-2 left-6"
     >
       <path
         id="Vector"
@@ -44,12 +44,12 @@ export const Card = ({
 
   return (
     <div
-      className={`relative w-[163px] flex flex-col h-fit gap-[14px] cursor-pointer ${customClass}`}
+      className={`relative w-[163px] flex flex-col items-center h-fit gap-[5vh] cursor-pointer ${customClass}`}
       onClick={onClickProps}
     >
       <VectorIcon color={color} />
       <div
-        className="w-[163px] h-[163px] flex flex-col border"
+        className="w-[10vw] h-[20vh] flex flex-col border"
         style={
           isSelected
             ? { boxShadow: `0px 0px 25px 3px ${color}`, borderColor: color }
@@ -59,7 +59,7 @@ export const Card = ({
         <div className="h-[142px] flex justify-center items-center ">
           <img
             src={imgUrl}
-            // width={"72px"}
+            width={"72px"}
             // style={{ boxShadow: `0px 1px 21.2px 0px ${color}` }}
             alt="iconic"
             className="object-contain max-w-[90%] max-h-[90%] "
