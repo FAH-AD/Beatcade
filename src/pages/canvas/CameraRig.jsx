@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { easing } from 'maath';
-import { useSnapshot } from 'valtio';
-import * as THREE from 'three';
-import state from '../../store';
+import React, { useEffect, useRef, useState } from "react";
+import { useFrame } from "@react-three/fiber";
+import { easing } from "maath";
+import { useSnapshot } from "valtio";
+import * as THREE from "three";
+import state from "../../store";
 
 const CameraRig = ({ children }) => {
   const group = useRef();
@@ -29,9 +29,9 @@ const CameraRig = ({ children }) => {
       [state.pointer.y / 20, -state.pointer.x / 10, 0],
       0.25,
       delta
-    )
-  })
-  return <group ref={group}>{children}</group>
-}
+    );
+  });
+  return <group ref={group}>{children}</group>;
+};
 
-export default CameraRig
+export default CameraRig;
